@@ -1,0 +1,13 @@
+#app { 
+    text-align: center; /* alinhamento do texto*/
+    width: 800px; /*Tamanho das imagens em pixels*/
+    margin: auto; /* centraliza tudo as imagens dentro da tag div*/
+}
+.characters{ /* essa é uma classe dos personagens de star wars*/
+    display: grid; /* grade*/
+    grid-template-columns: repeat(4, 1fr); /* 4 colunas por linha, um elemento por coluna, teremos 4 colunas e duas linhas*/
+
+}
+.item img{
+    width: 200px;
+}
