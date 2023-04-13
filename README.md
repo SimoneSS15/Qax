@@ -1,2 +1,2 @@
 # Qax
- curso de javascript
+ Curso de javascript voltado para QAs
