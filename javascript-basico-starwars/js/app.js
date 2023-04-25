@@ -47,20 +47,22 @@ document.getElementById('user-name').innerHTML= userName // puxando elemento use
 // }
 // var resultado = soma(5,5) // pra mostrar o resultado precisa de uma variável (resultado)
 // console.log(resultado)
-var saldo = 1000
-function saque(valor){
-    if( saldo < valor){ // primeira condição
+
+// O código abaixo refere-se aos três cenários feitos logo após a codificação
+// var saldo = 1000
+// function saque(valor){
+//     if( saldo < valor){ // primeira condição
        
-        console.log('O valor do saque excede o valor do saldo')
-    } else if(valor > 700){ // segunda condição
-        console.log('Valor excede o limite de saque permitido')
-    } else{ // terceira condição
-        saldo = saldo - valor
-    }
+//         console.log('O valor do saque excede o valor do saldo')
+//     } else if(valor > 700){ // segunda condição
+//         console.log('Valor excede o limite de saque permitido')
+//     } else{ // terceira condição
+//         saldo = saldo - valor
+//     }
    
-}
-saque(701)
-console.log(saldo)
+// }
+// saque(701)
+// console.log(saldo)
 // As condições acima atendem aos três cenários descritos abaixos.
 
 
@@ -88,3 +90,23 @@ console.log(saldo)
 // Quando faço um saque no valor de 701 reais
 // Então não deve deduzir do meu saldo
 // E deve mostrar uma mensagem de alerta informando que o valor excede o máximo permitido
+
+//Arrays//
+// È um tipo de dados onde podemos ter um conjunto de informações
+// var gaveteiro = ['Meias', 'Gravatas', 'Documentos', 'Salgadinho'] // quatro gavetas começando pela gaveta 0
+// console.log(gaveteiro[0]) // mostra a primeira gaveta Meias
+
+// var personagens = ['Mestre Yoda', 'Luke Skywalker', 'Princesa Leia', 'Darth Vader']
+// //console.log(typeof personagens) // vai mostrar que a variável é do tipo Object
+// personagens.push('C3pO') // a função push adiciona um novo item no array
+// personagens.push('R2D2')
+// personagens.pop() // vai retirar o último item da lista
+
+// personagens = personagens.filter(function(p){
+//     return p !== 'Darth Vader'
+// }) // Esse trecho de código mais complexo, retira o nome Darth Vader da lista array, a letra p representa a primeira letra da variável personagens
+
+// personagens = personagens.filter(function(p){
+//     return p === 'Mestre Yoda'
+// }) // Esse código faz um filtro e mostra penas o item Mestre Yoda do array ignorando os outros
+// console.log(personagens)
