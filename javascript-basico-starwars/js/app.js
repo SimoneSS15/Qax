@@ -4,9 +4,9 @@ var userName = 'Simone, aprendendo essa bagaça'
 document.getElementById('user-name').innerHTML= userName // puxando elemento user-name do HTML para o javascript
 
 //Variáveis//
-//var nome = 'Mestre Yoda'
-//var idade = 100
-//var jedi = true
+var nome = 'Mestre Yoda'
+var idade = 100
+var jedi = true
 // javascript trabalha com tipagem dinâmica
 //console.log( typeof nome) // typeof mostra o tipo da varável
 //console.log(typeof idade)
@@ -110,3 +110,28 @@ document.getElementById('user-name').innerHTML= userName // puxando elemento use
 //     return p === 'Mestre Yoda'
 // }) // Esse código faz um filtro e mostra penas o item Mestre Yoda do array ignorando os outros
 // console.log(personagens)
+
+// Controles de repetição (loops)//
+// var personagens = ['Mestre Yoda', 'Luke Skywalker', 'Princesa Leia', 'Darth Vader']
+// personagens.forEach(function(p){ // É uma estrutura (um loop) de repetição que vai mostrar todos os personagens na tela
+//     console.log(p)
+// })
+// for (var i in personagens){  // outra forma de listrar os personagens
+//     console.log(personagens[i])
+// }
+// for (var i = 0; i<= 10; i++){ // vai mostrar o valor de i até i>=10
+//     console.log(i)
+// }
+
+// Objetos // (super variáveis)
+var yoda  = { 
+    nome: 'Mestre yoda', // parecido com json
+    idade: 100,
+    jedi: true,
+    mostra_idade: function(){
+        console.log(’A idade do $(this.nome) é $(this.idade) anos’)
+    }
+} // a variável yoda é um objeto (uma super variável) onde posso incrementar valores
+
+console.log(yoda)
+yoda.mostra_idade()
