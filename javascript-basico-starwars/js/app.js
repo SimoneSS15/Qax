@@ -48,5 +48,11 @@ const App = new Vue({ // a constante App é uma nova instância do framework Vue
         title: 'Star Wars Lego',
         userName: 'Simone',
         characters: LIST // lista de personagens
+    },
+    methods:{ // recurso do vue para usar funções
+        like(userName){
+            alert(`O pesonagem ${userName} recebeu um like`)// foi usado crase para inrterpolação
+        }
+
     }
 })

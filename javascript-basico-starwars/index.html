@@ -15,6 +15,7 @@
             <div class="item" v-for="item of characters"> <!--v-for é p for do vuejs, é um loop-->
                 <img :src="item.avatar" :alt="item.nome"/> <!--HTML interpretando o vue-->
                 <p>{{item.nome}}</p>
+                <button @click="like(item.nome)">Like</button>// a propriedade @click é nativa do vuejs
             </div>
             
         </div>
