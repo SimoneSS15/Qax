@@ -47,11 +47,29 @@ const App = new Vue({ // a constante App é uma nova instância do framework Vue
     data: {
         title: 'Star Wars Lego',
         userName: 'Simone',
-        characters: LIST // lista de personagens
+        characters: LIST, // lista de personagens
+        searchName: ''
     },
     methods:{ // recurso do vue para usar funções
         like(userName){
             alert(`O pesonagem ${userName} recebeu um like`)// foi usado crase para inrterpolação
+        },
+
+        search(){
+            if (this.searchName === ''){
+                 return alert('O preenchimento do campo é obrigatório')
+            }
+            const list = this.characters = LIST
+            const result = list.filter(item =>{
+                return item.nome === this.searchName
+            })
+            if (result.length <= 0){
+                alert('Nenhum registro encontrado')
+            } else {
+                this.characters= result
+            }
+
+            
         }
 
     }

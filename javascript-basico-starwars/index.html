@@ -10,12 +10,16 @@
     <div id="app">
         <h1>{{ title }}</h1>
         <small>Olá, {{userName}} </span></small>
+        <form> <!--Formulário de busca-->
+            <input placeholder="Busca por nome..." v-model="searchName"/>
+            <button type="button"@click="search()">Buscar</button>
+        </form>
 
         <div class="characters"> <!-- criando uma classe de nome characters que são personagens-->
             <div class="item" v-for="item of characters"> <!--v-for é p for do vuejs, é um loop-->
                 <img :src="item.avatar" :alt="item.nome"/> <!--HTML interpretando o vue-->
                 <p>{{item.nome}}</p>
-                <button @click="like(item.nome)">Like</button>// a propriedade @click é nativa do vuejs
+                <button @click="like(item.nome)">Like</button><!--a propriedade @click é nativa do vuejs--> 
             </div>
             
         </div>
