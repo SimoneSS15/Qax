@@ -5,7 +5,6 @@ body {
    background-position: center;
    background-color: #111;
    color: #CCC;
-   font-family: 'handlee', cursive;
 }
 
 #app {
@@ -55,23 +54,11 @@ body {
    border: 5px #FD4 solid;
 }
 
-.characters .item .like {
-   color:#FD4;
-   cursor: pointer;
-}
-
-.characters .item .delete {
-   color:rgb(172, 4, 32);
-   cursor: pointer;
-}
-
-
 input {
    padding: 0.75em 1.25em;
    border-radius: 8px;
    border: none;
    font-size: 1rem;
-   font-family: 'handlee', cursive;
 }
 
 button {
@@ -81,6 +68,5 @@ button {
    color: #111;
    font-size: 1rem;
    border: none;
-   font-family: 'handlee', cursive;
 }
 

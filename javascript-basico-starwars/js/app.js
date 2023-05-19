@@ -54,6 +54,14 @@ const App = new Vue({ // a constante App é uma nova instância do framework Vue
         like(userName){
             alert(`O pesonagem ${userName} recebeu um like`)// foi usado crase para inrterpolação
         },
+         remove(id){
+            const list = this.characters // a constante copia a lista de personagens
+
+            const result = list.filter(item =>{ // é feito um filtro sem o id do personagem escolhido
+             return item.id !== id  // então ele retorna na tela apenas os outros personagens diferente do personagem com id escolhido
+            })
+            this.characters = result // a sensação é de que o personagem foi excluido (mas não foi) se der um refresh na página volta tudo novamente
+         },
 
         search(){
             if (this.searchName === ''){
